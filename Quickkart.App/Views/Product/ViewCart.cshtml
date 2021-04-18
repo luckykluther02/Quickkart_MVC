@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Quickkart.App.Models.Cart>
+@{
+    ViewBag.Title = "ViewCart";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<h2 style="color: #fff">ViewCart</h2>
+
+<div class="container">
+    <table class="table-striped table-bordered" align="center" style="border:5px solid #7390a9; margin-top: 50px; width: 900px;">
+        <tr style="background-color: #7390a9; height:25px; font-size:12pt">
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.QuantityPurchased)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.TotalAmount)
+            </th>
+            <th style="text-align:center">
+                Action
+            </th>
+            <th style="text-align:center">
+                Action
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr style="background-color:white; height:25px; text-align:center">
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QuantityPurchased)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalAmount)
+                </td>
+                <td><button class="btn btn-default" style="margin: 0 auto; display: block">@Html.ActionLink("Update Cart", "UpdateCart", item)</button></td>
+                <td><button class="btn btn-default" style="margin: 0 auto; display: block">@Html.ActionLink("Delete Cart", "DeleteCart", item)</button></td>
+            </tr>
+        }
+
+    </table>
+    <br/>
+    <button class="btn btn-default btn-md" style="margin: 0 auto; display: block">@Html.ActionLink("Proceed to Checkout", "CheckOut", "Product")</button>
+</div>
+
+

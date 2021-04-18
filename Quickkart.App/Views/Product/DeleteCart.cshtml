@@ -1,0 +1,51 @@
+﻿@model Quickkart.App.Models.Cart
+
+@{
+    ViewBag.Title = "DeleteCart";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<h2 style="color:#fff">DeleteCart</h2>
+
+<h3 style="color:#fff">Are you sure you want to delete this?</h3>
+<div>
+    <h4 style="color:#fff">Cart</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt style="color:#fff">
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+
+        <dd style="color:#fff">
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+
+        <dt style="color:#fff">
+            @Html.DisplayNameFor(model => model.QuantityPurchased)
+        </dt>
+
+        <dd style="color:#fff">
+            @Html.DisplayFor(model => model.QuantityPurchased)
+        </dd>
+
+        <dt style="color:#fff">
+            @Html.DisplayNameFor(model => model.TotalAmount)
+        </dt>
+
+        <dd style="color:#fff">
+            @Html.DisplayFor(model => model.TotalAmount)
+        </dd>
+
+
+    </dl>
+
+    @using (Html.BeginForm("DeleteCart", "Product", new { prodId = Model.ProductId})) {
+        @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        @Html.ActionLink("Back to List", "Index")
+        <input type="submit" style="background-color: #4CAF50; color: white;" value="Delete" class="btn btn-default" /> |
+    </div>
+    }
+</div>

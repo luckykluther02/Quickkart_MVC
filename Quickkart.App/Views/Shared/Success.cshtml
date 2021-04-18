@@ -1,0 +1,23 @@
+﻿
+@if(Session["userName"]!=null){
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+else{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Success</title>
+</head>
+<body>
+    <div class="jumbotron" style="width: 100%; text-align:center; margin-top: 70px">
+        <h2>@ViewBag.Message</h2>
+    </div>
+
+</body>
+</html>

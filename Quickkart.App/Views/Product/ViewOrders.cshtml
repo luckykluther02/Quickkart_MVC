@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Quickkart.App.Models.Cart>
+@{
+    ViewBag.Title = "ViewOrders";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<h2 style="color: #fff">ViewOrders</h2>
+
+<div class="container">
+    <table class="table-striped table-bordered" align="center" style="border:5px solid #7390a9; margin-top: 50px; width: 900px; height: 300px;">
+        <tr style="background-color: #7390a9; height:25px; font-size:12pt">
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.OrderId)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.QuantityPurchased)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.TotalAmount)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.OrderDate)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr style="background-color:white; height:25px; text-align:center">
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QuantityPurchased)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderDate)
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+
+
+

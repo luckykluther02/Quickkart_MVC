@@ -1,0 +1,52 @@
+﻿<style>
+    .overlay {
+        background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+        background-size: cover;
+        background-position: center center;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .mid {
+        text-align: center;
+        padding: 80px 0;
+        height: 100%;
+        width: 100%
+    }
+
+    i {
+        color: #9ABC66;
+        font-size: 100px;
+        line-height: 200px;
+        margin-left: -15px;
+    }
+
+
+    .card {
+        background: white;
+        padding: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: inline-block;
+        margin: 0 auto;
+        width: 500px;
+    }
+</style>
+<div class="overlay">
+    <div class="mid">
+        <div class="card">
+            <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+                <i class="checkmark">✔</i>
+            </div>
+            <h3 style="text-align:left;">THANK YOU FOR YOUR PURCHASE!</h3>
+            <p style="text-align:left; font-size: 15px">You will receive an order confirmation email with details of your order.<br /> Your order # is: <b>@ViewBag.orderID</b> </p>
+            <div style="float:left; font-size: 12px">@Html.ActionLink("Continue Shopping", "MyHome", "Home")</div>
+        </div>
+    </div>
+</div>
+

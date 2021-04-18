@@ -1,0 +1,6 @@
+C:\Users\Lucky\source\Latest Project\QuickkartMVC\Quickkart.DataAccessLayer\bin\Debug\Quickkart.DataAccessLayer.exe.config
+C:\Users\Lucky\source\Latest Project\QuickkartMVC\Quickkart.DataAccessLayer\bin\Debug\Quickkart.DataAccessLayer.exe
+C:\Users\Lucky\source\Latest Project\QuickkartMVC\Quickkart.DataAccessLayer\bin\Debug\Quickkart.DataAccessLayer.pdb
+C:\Users\Lucky\source\Latest Project\QuickkartMVC\Quickkart.DataAccessLayer\obj\Debug\Quickkart.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Lucky\source\Latest Project\QuickkartMVC\Quickkart.DataAccessLayer\obj\Debug\Quickkart.DataAccessLayer.exe
+C:\Users\Lucky\source\Latest Project\QuickkartMVC\Quickkart.DataAccessLayer\obj\Debug\Quickkart.DataAccessLayer.pdb

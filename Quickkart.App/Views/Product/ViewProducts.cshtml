@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Quickkart.App.Models.Product>
+
+@{
+    ViewBag.Title = "ViewProducts";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<h2 style="color: #fff">ViewProducts</h2>
+
+<table class="table-striped table-bordered" align="center" style="border:5px solid #7390a9; margin-top: 50px; width: 900px; height: 300px;">
+    <tr style="background-color: #7390a9; height:25px; font-size:12pt">
+        <th style="text-align:center">
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th style="text-align:center">
+            @Html.DisplayNameFor(model => model.CategoryId)
+        </th>
+        <th style="text-align:center">
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th style="text-align:center">
+            @Html.DisplayNameFor(model => model.QuantityAvailable)
+        </th>
+        <th style="text-align:center">Action</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr style="background-color:white; height:25px; text-align:center">
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CategoryId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuantityAvailable)
+        </td>
+        <td><button class="btn btn-default" style="margin: 0 auto; display: block">@Html.ActionLink("Add To Cart", "AddToCart", item )</button></td>
+    </tr>
+}
+
+</table>

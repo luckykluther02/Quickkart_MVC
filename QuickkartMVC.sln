@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickkartMVC.ConsoleApp", "QuickkartMVC.ConsoleApp\QuickkartMVC.ConsoleApp.csproj", "{5C28F085-DF23-457E-911E-89ACB154170C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quickkart.DataAccessLayer", "Quickkart.DataAccessLayer\Quickkart.DataAccessLayer.csproj", "{D84DA1A8-B3A7-451A-99C7-6D344CA9590F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quickkart.Common", "Quickkart.Common\Quickkart.Common.csproj", "{1D16724E-F9B8-4EF0-B57E-6EAA9D8FDC73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quickkart.Business", "Quickkart.Business\Quickkart.Business.csproj", "{75529250-E40A-4501-B5FB-8C3D93512398}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quickkart.App", "Quickkart.App\Quickkart.App.csproj", "{032C23CF-2152-47F1-83D2-C1005CDE4692}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quickkart.Services", "Quickkart.Services\Quickkart.Services.csproj", "{32B16F1D-E43A-4F9F-BC6B-1AF9E5236AF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C28F085-DF23-457E-911E-89ACB154170C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C28F085-DF23-457E-911E-89ACB154170C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C28F085-DF23-457E-911E-89ACB154170C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C28F085-DF23-457E-911E-89ACB154170C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D84DA1A8-B3A7-451A-99C7-6D344CA9590F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D84DA1A8-B3A7-451A-99C7-6D344CA9590F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D84DA1A8-B3A7-451A-99C7-6D344CA9590F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D84DA1A8-B3A7-451A-99C7-6D344CA9590F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D16724E-F9B8-4EF0-B57E-6EAA9D8FDC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D16724E-F9B8-4EF0-B57E-6EAA9D8FDC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D16724E-F9B8-4EF0-B57E-6EAA9D8FDC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D16724E-F9B8-4EF0-B57E-6EAA9D8FDC73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75529250-E40A-4501-B5FB-8C3D93512398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75529250-E40A-4501-B5FB-8C3D93512398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75529250-E40A-4501-B5FB-8C3D93512398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75529250-E40A-4501-B5FB-8C3D93512398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{032C23CF-2152-47F1-83D2-C1005CDE4692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{032C23CF-2152-47F1-83D2-C1005CDE4692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{032C23CF-2152-47F1-83D2-C1005CDE4692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{032C23CF-2152-47F1-83D2-C1005CDE4692}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32B16F1D-E43A-4F9F-BC6B-1AF9E5236AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B16F1D-E43A-4F9F-BC6B-1AF9E5236AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B16F1D-E43A-4F9F-BC6B-1AF9E5236AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B16F1D-E43A-4F9F-BC6B-1AF9E5236AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F922CB90-33CA-4A1C-979D-D0079DC83BE4}
+	EndGlobalSection
+EndGlobal

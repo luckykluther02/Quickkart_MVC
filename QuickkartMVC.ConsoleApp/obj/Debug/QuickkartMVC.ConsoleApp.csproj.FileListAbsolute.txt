@@ -1,0 +1,6 @@
+C:\Users\Lucky\source\Latest Project\QuickkartMVC\QuickkartMVC.ConsoleApp\bin\Debug\QuickkartMVC.ConsoleApp.exe.config
+C:\Users\Lucky\source\Latest Project\QuickkartMVC\QuickkartMVC.ConsoleApp\bin\Debug\QuickkartMVC.ConsoleApp.exe
+C:\Users\Lucky\source\Latest Project\QuickkartMVC\QuickkartMVC.ConsoleApp\bin\Debug\QuickkartMVC.ConsoleApp.pdb
+C:\Users\Lucky\source\Latest Project\QuickkartMVC\QuickkartMVC.ConsoleApp\obj\Debug\QuickkartMVC.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Lucky\source\Latest Project\QuickkartMVC\QuickkartMVC.ConsoleApp\obj\Debug\QuickkartMVC.ConsoleApp.exe
+C:\Users\Lucky\source\Latest Project\QuickkartMVC\QuickkartMVC.ConsoleApp\obj\Debug\QuickkartMVC.ConsoleApp.pdb

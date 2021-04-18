@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            &nbsp;
+            </div>
+        <div class="row">
+            <div class="col-md-1">
+                </div>
+        
+@using (Html.BeginForm("Login", "Home"))
+{
+    <div class="col-md-11">
+    <div class="container" style="margin:0 auto; display: block; background-color: #fff; width: 400px; margin-top: 90px; padding-bottom: 10px">
+        <div class="row">
+            <div class="col-md-9 text-center">
+            <h2>Login</h2>
+                <br/>
+        </div>
+            </div>
+                <div class="row form-group">
+                    <div class="col-md-3" style="text-align:right">
+                        UserName:
+                    </div>
+                    <div class="col-md-6">
+                        @{
+                            if (Request.Browser.Cookies != false)
+                            {
+                                HttpCookie cookieObj = Request.Cookies["User"];
+                                if (cookieObj != null)
+                                {
+                                    @Html.TextBox("name", cookieObj.Values[0], new { @class="form-control"})
+                                }
+                                else
+                                {
+                                    @Html.TextBox("name", new { @class = "form-control" })
+                                }
+                            }
+                        }
+                    </div>
+                </div>
+                <br />
+                <div class="row form-group">
+                    <div class="col-md-3" style="text-align:right">
+                        Password:
+                    </div>
+                    <div class="col-md-9">
+                        @{
+                            if (Request.Browser.Cookies != false)
+                            {
+                                HttpCookie cookieObj = Request.Cookies["User"];
+                                if (cookieObj != null)
+                                {
+                                    @Html.TextBox("pwd", cookieObj.Values[1], new { @class = "form-control" })
+                                }
+                                else
+                                {
+                                    @Html.Password("pwd", new { @class = "form-control" })
+                                }
+                            }
+                        }
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-3 text-right">
+                        &nbsp;
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="submit" style="background-color: #4CAF50; margin-left: 15%; font-size: 15px; color: white;" class="btn" value="Login" id="btnLogin">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+     }
+            </div>
+</div>
+</div>
